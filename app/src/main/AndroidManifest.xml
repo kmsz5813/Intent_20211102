@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Intent_20211102">
-        <activity android:name=".OtherActivity"></activity>
+        <activity android:name=".ViewMessageActivity"></activity>
+        <activity android:name=".OtherActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
