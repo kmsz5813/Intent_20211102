@@ -1,0 +1,2 @@
+rootProject.name = "Intent_20211102"
+include ':app'
