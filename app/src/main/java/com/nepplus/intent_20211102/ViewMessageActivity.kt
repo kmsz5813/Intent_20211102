@@ -9,7 +9,7 @@ class ViewMessageActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_view_message)
 
-        val receiveMessage = intent.getStringArrayExtra("message")
+        val receiveMessage = intent.getStringExtra("message")
 
         txtMessage.text = receiveMessage
 
