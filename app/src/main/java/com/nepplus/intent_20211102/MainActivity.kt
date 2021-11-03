@@ -1,6 +1,7 @@
 package com.nepplus.intent_20211102
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -49,7 +50,19 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        btnDial.setOnClickListener {
+//            안드로이드 전화화면으로 이동.
+
+//            제공할 정보 2가지. 1) 어떤 화면으로 갈건가? (action) / 2) 세부정보 (전화걸기 -어디로 전화_ - Uri
+
+            val myUri = Uri.parse("tel:01022223333")
+            val myIntent = Intent( Intent.ACTION_DIAL, myUri )
+            startActivity(myIntent)
+
+        }
+
     }
+
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
