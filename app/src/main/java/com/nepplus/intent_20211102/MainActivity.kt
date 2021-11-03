@@ -64,6 +64,18 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        btnCall.setOnClickListener {
+            val inPutPhoneNum = edtPhoneNum.text.toString()
+
+//            제공할 정보 2가지. 1) 어떤 화면으로 갈건가? (action) / 2) 세부정보 (전화걸기 -어디로 전화_ - Uri
+
+            val myUri = Uri.parse("tel:${inPutPhoneNum}")
+            val myIntent = Intent( Intent.ACTION_CALL, myUri )
+            startActivity(myIntent)
+
+
+        }
+
     }
 
 
