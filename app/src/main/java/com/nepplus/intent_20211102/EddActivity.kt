@@ -22,7 +22,7 @@ class EddActivity : AppCompatActivity() {
             resultIntent.putExtra("nick", intputNickname)
 
 //            최종 결과 ( 확인누름, 들고 돌아갈 데이터)지정
-            setResult( RESULT_OK, resultIntent )
+            setResult(RESULT_OK, resultIntent)
 
 //            실제 이전화면 복귀
             finish()
